@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Paris2024";
+    src: url('/fonts/Paris2024/Paris2024-Variable.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url('/fonts/Poppins/Poppins-Regular.ttf') format("truetype");
+}
+.font__headings{
+    font-family:'Paris2024';
+}
+.font__body{
+    font-family: 'Poppins';
+}
+
+:root{
+    --black:#333;
+    --dark_gray:#474747;
+    --light_gray:#888;
+    --red:#ED2939;
+    --blue:#002395;
+    --white:#D5E2F0;
+
+}
+
+.headings__gradient{
+    background: linear-gradient(90deg, var(--red), var(--blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.header{
+    position: static;
+    background-color: white;
+    height: 80px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav__links{
+    display: flex;
+    height: 100%;
+}
+.nav__item{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    font-size: large;
+    font-weight: 600;
+}
+
+.nav__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #8db9e5; 
+    transform: skewX(-25deg); 
+}
+
+.nav__links::after {
+  content: "";
+  width: 2px;
+  background-color: #8db9e5;
+  transform: skewX(-25deg);
+}
+
+.hero{
+    display: relative;
+    align-items: center
+}
+
+.hero__bg{
+    width: 100%;
+    display: block;
+}
+.hero__mascot{
+    position: absolute;
+    top: 400px;
+    left: 20px;
+}
+.hero__logo{
+    position: absolute;
+    top: 270px;
+    right: 20px;
+}
+.hero__text{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+.second__line{
+    position: absolute;
+    font-size: 3.5rem;
+    right: 0;
+    color: #e8f0f8;
+}
+
+.slider__bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1rem;
+}
+
+.slider__items{
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 20px 5px 20px;
+    height: 2rem;
+    border-radius: 3px;
+}
+
+.slider__item{
+    background-color: white;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.slider__item:first-child{
+    opacity: 1;
+}
+
+.slider__bar button{
+    position: relative;
+    padding: 20px;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.slider__previous{
+    background-image: url('../images/btn-prev.svg');
+}
+.slider__next{
+    background-image: url('../images/btn-next.svg');
+}
+
+.countdown{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 800px;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    margin-top: -130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown__lines{
+    margin-right: 200px;
+}
+.event__text{
+    font-size: 25px;
+    margin-top: 70px;
+    color: var(--black);
+}
+.date__text{
+    color: var(--light_gray);
+}
+
+.timer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.time__block{
+    text-align: center;
+}
+.time__block span{
+    font-size: 6rem;
+    font-weight: 600;
+    color: var(--black);
+    display: block;
+}
+
+.timer p{
+    color: var(--light_gray);
+    font-size: 1.5rem;
+}
+
+.separator{
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--light_gray);
+    margin-bottom: 35px;
+}
+
+.timer__logos{
+    position: absolute;
+    right: 0;
+}
+
+.road_to_paris{
+    margin-top: 600px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    width: 100%;
+    height: 500px;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+.rtp__header{
+    position: absolute;
+    margin-top: -250px;
+}
+
+.rtp__lines{
+    margin-left: 180px;
+}
