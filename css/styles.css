@@ -38,14 +38,16 @@
 }
 
 .header{
-    position: static;
+    position: fixed;
+    width: 100vw;
     background-color: white;
     height: 80px;
-    padding: 0 50px;
+    /* padding: 0 50px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    z-index: 100;
 }
 
 .header__logo{
@@ -57,6 +59,7 @@
 .nav__links{
     display: flex;
     height: 100%;
+    margin-right: 30px;
 }
 .nav__item{
     display: flex;
@@ -83,7 +86,7 @@
 
 .nav__links::after {
   content: "";
-  width: 2px;
+  width: 3px;
   background-color: #8db9e5;
   transform: skewX(-25deg);
 }
