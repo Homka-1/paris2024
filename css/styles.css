@@ -5,11 +5,11 @@
 
 @font-face {
     font-family: "Paris2024";
-    src: url('/fonts/Paris2024/Paris2024-Variable.ttf') format("truetype");
+    src: url('../fonts/Paris2024/Paris2024-Variable.ttf') format("truetype");
 }
 @font-face {
     font-family: "Poppins";
-    src: url('/fonts/Poppins/Poppins-Regular.ttf') format("truetype");
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format("truetype");
 }
 .font__headings{
     font-family:'Paris2024';
