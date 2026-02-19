@@ -42,11 +42,11 @@
     width: 100vw;
     background-color: white;
     height: 80px;
-    /* padding: 0 50px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    top: 0;
     z-index: 100;
 }
 
@@ -93,7 +93,8 @@
 
 .hero{
     display: relative;
-    align-items: center
+    align-items: center;
+    margin-top: 80px;
 }
 
 .hero__bg{
