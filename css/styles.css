@@ -260,3 +260,21 @@
 .rtp__lines{
     margin-left: 180px;
 }
+
+.posts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.posts__item{
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
