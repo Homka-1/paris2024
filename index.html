@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+    <title>Paris Olympics 2024</title>
 </head>
 <body>
-    <header draggable="false">
+    <header>
         <div class="header">
             <img class="header__logo" src="./images/logo-black.png">
             <nav class="nav__links font__headings">
                 <a href="#countdown" class="nav__item">CountDown</a>
                 <a href="#roadtoparis" class="nav__item">Road to Paris</a>
-                <a href="#" class="nav__item">About the Games</a>
-                <a href="#" class="nav__item">Olympic Shop</a>
+                <a href="#about" class="nav__item">About the Games</a>
+                <a href="#shop" class="nav__item">Olympic Shop</a>
                 <a href="#" class="nav__item">Worldwide Partners</a>
             </nav>
         </div>
@@ -40,7 +40,7 @@
     </header>
     <main>
         <section class="countdown" id="countdown">
-            <p class="countdown__text font__headings headings__gradient">CountDown</p>
+            <h1 class="countdown__text font__headings headings__gradient">CountDown</h1>
             <img src="./images/lines-titles.png" alt="" class="countdown__lines">
             <p class="event__text font__body">Olympic Games Paris 2024</p>
             <p class="date__text font__body">26 July - 11 August,</p>
@@ -68,35 +68,35 @@
             </div>
         </section>
         <section class="road_to_paris" id="roadtoparis">
-            <div class="rtp__header">
-                <p class="rtp__text font__headings headings__gradient">Road to Paris</p>
+            <div class="section__header rtp__header">
+                <h1 class="rtp__text font__headings headings__gradient">Road to Paris</h1>
                 <img src="./images/lines-titles.png" alt="" class="rtp__lines">
             </div>
-            <div class="posts">
+            <div class="posts posts__rtp">
                 <article class="posts__item">
                     <img src="./images/road-01.png" alt="" class="post__img">
-                    <p class="post__header font__headings">2024 FIBA</p>
+                    <h3 class="post__header font__headings">2024 FIBA</h3>
                     <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.</p>
                     <p class="post__date font__body">02-05 May</p>
                 </article>
                 <article class="posts__item">
                     <img src="./images/road-02.png" alt="" class="post__img">
-                    <p class="post__header font__headings">2024 UWV</p>
+                    <h3 class="post__header font__headings">2024 UWV</h3>
                     <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.</p>
                     <p class="post__date font__body">08-12 May</p>
                 </article>
                 <article class="posts__item">
                     <img src="./images/road-03.png" alt="" class="post__img">
-                    <p class="post__header font__headings">2024 UIPM</p>
+                    <h3 class="post__header font__headings">2024 UIPM</h3>
                     <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.</p>
                     <p class="post__date font__body">09-12 May</p>
                 </article>
                 <article class="posts__item">
                     <img src="./images/road-04.png" alt="" class="post__img">
-                    <p class="post__header font__headings">2024 ISSF</p>
+                    <h3 class="post__header font__headings">2024 ISSF</h3>
                     <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.</p>
                     <p class="post__date font__body">14-27 May</p>
@@ -108,6 +108,80 @@ tempor incididunt ut labore et dolore.</p>
                         <button class="post__next"></button>
                     </nav>
                 </div>
+            </div>
+        </section>
+        <section class="about_the_games" id="about">
+            <div class="section__header about__header">
+                <h1 class="about__text font__headings headings__gradient">About the Games</h1>
+                <img src="./images/lines-titles.png" alt="" class="about__lines">
+            </div>
+            <div class="posts posts__about">
+                <article class="posts__item">
+                    <div class="post__head font__headings"><h2>SPORTS</h2></div>
+                    <img src="./images/about-01.png" alt="" class="post__img">
+                    <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore.</p>
+                </article>
+                <article class="posts__item">
+                    <div class="post__head font__headings"><h2>VENUES</h2></div>
+                    <img src="./images/about-02.png" alt="" class="post__img">
+                    <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore.</p> 
+                </article>
+                <article class="posts__item">
+                    <div class="post__head font__headings"><h2>CELEBRATING THE GAMES</h2></div>
+                    <img src="./images/about-03.png" alt="" class="post__img">
+                    <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore.</p>
+                </article>
+                <article class="posts__item">
+                    <div class="post__head font__headings"><h2>SPECTATOR INFORMATION</h2></div>
+                    <img src="./images/about-04.png" alt="" class="post__img">
+                    <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore.</p>
+                </article>
+            </div>
+            <img src="./images/logo-emblem.png" alt="" class="about__logo">
+        </section>
+        <section class="olympic_shop" id="shop">
+            <div class="section__header shop__header">
+                <h1 class="shop__text font__headings headings__gradient">Olympic Shop</h1>
+                <img src="./images/lines-titles.png" alt="" class="shop__lines">
+            </div>
+            <div class="posts posts__shop">
+                <u class="more font__body">See more products</u>
+                <article class="posts__item">
+                    <img src="./images/shop-01.png" alt="" class="post__img">
+                    <h3 class="post__header font__headings">Latin Crest T-Shirt-White</h3>
+                    <div class="buy">
+                        <button class="buy__btn font__headings">BUY NOW</button>
+                        <span class="price font__headings">&euro;42</span>
+                    </div>
+                </article>
+                <article class="posts__item">
+                    <img src="./images/shop-02.png" alt="" class="post__img">
+                    <h3 class="post__header font__headings">Logo Graphic T-Shirt-White</h3>
+                    <div class="buy">
+                        <button class="buy__btn font__headings">BUY NOW</button>
+                        <span class="price font__headings">&euro;45</span>
+                    </div>
+                </article>
+                <article class="posts__item">
+                    <img src="./images/shop-03.png" alt="" class="post__img">
+                    <h3 class="post__header font__headings">Plush Mascot-15 cms</h3>
+                    <div class="buy">
+                        <button class="buy__btn font__headings">BUY NOW</button>
+                        <span class="price font__headings">&euro;25</span>
+                    </div>
+                </article>
+                <article class="posts__item">
+                    <img src="./images/shop-04.png" alt="" class="post__img">
+                    <h3 class="post__header font__headings">Bobble Beanie</h3>
+                    <div class="buy">
+                        <button class="buy__btn font__headings">BUY NOW</button>
+                        <span class="price font__headings">&euro;35</span>
+                    </div>
+                </article>
             </div>
         </section>
     </main>

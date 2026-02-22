@@ -1,6 +1,14 @@
 *{
     padding: 0;
     margin: 0;
+    -webkit-user-drag: none;
+}
+
+button{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: 0;
 }
 
 @font-face {
@@ -48,6 +56,14 @@
     overflow: hidden;
     top: 0;
     z-index: 100;
+}
+
+header{
+    user-select: none;
+}
+
+img{
+    user-select: none;
 }
 
 .header__logo{
@@ -103,7 +119,7 @@
 }
 .hero__mascot{
     position: absolute;
-    top: 400px;
+    bottom: 0;
     left: 20px;
 }
 .hero__logo{
@@ -131,7 +147,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: -30px;
+    bottom: 20px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -178,8 +194,7 @@
     background-image: url('../images/btn-next.svg');
 }
 
-.countdown{
-    position: absolute;
+section{
     background-color: white;
     width: 100%;
     height: 800px;
@@ -189,6 +204,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.countdown{
+    background-color: white;
 }
 
 .countdown__lines{
@@ -240,22 +259,16 @@
 }
 
 .road_to_paris{
-    margin-top: 600px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: var(--white);
-    width: 100%;
-    height: 800px;
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
 
-.rtp__header{
+.section__header{
     position: absolute;
-    margin-top: -400px;
+    margin-top: -450px;
+    margin-bottom: 50px;
 }
+
+
 
 .rtp__lines{
     margin-left: 180px;
@@ -265,14 +278,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     position: absolute;
-    top: 350px;
-    width: 95%;
+    margin-top: 5rem;
+    width: 90%;
     gap: 20px;
     flex: 25%;
 }
 
 .posts__item{
-    max-height: 300px;
+    max-height: 400px;
     background-color: #fff;
     display: flex;
     justify-content: start;
@@ -299,18 +312,20 @@
     max-width: 90%;
 }
 
-.posts__item .post__date{
+.posts__rtp .posts__item .post__date{
     color: var(--black);
     font-size: 0.85rem;
+    margin-top: 25px;
+    margin-bottom: 5px;
 }
 
 .posts__item p{
     margin-left: 8px;
     margin-top: 8px;
 }
-
-.posts__nav__container{
-    width: 100%;
+.posts__item h3{
+    margin-left: 8px;
+    margin-top: 8px;
 }
 
 .posts__nav{
@@ -339,4 +354,109 @@
 .posts__nav .post__next{
     background-image: url(../images/btn-next.svg);
     margin-right: 0;
+}
+
+.about_the_games{
+    background-color: white;
+}
+
+
+.about__lines{
+    position: absolute;
+    left: -50px;
+}
+
+.posts__about .posts__item{
+    max-height: 400px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    border-radius: 3px;
+}
+
+
+.posts__about .post__content{
+    color: var(--black);
+}
+
+.posts__about .post__head{
+    background-color: var(--red);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    border-radius: inherit;
+}
+
+.posts__about .post__head h2{
+    font-weight: 450;
+    color: white;
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+.about__logo{
+    margin-top: 550px;
+}
+
+.olympic_shop{
+    margin-top: 50px;
+    background-color: var(--white);
+}
+
+.shop__lines{
+    position: absolute;
+    right: -80px;
+}
+
+.posts__shop .posts__item{
+    height: 310px;
+    padding: 0 5%;
+}
+
+.posts__shop img{
+    border: 1px solid var(--white) ;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    margin-top: 5%;
+}
+
+.posts__shop .post__header{
+    font-size: 1.2rem;
+    margin-left: 0;
+}
+
+.more{
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.buy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.buy__btn{
+    padding: 15px 40px;
+    background-color: var(--black);
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buy .price{
+    margin-left: 3.5rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--light_gray);
 }
