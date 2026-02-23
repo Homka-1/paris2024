@@ -4,6 +4,10 @@
     -webkit-user-drag: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 button{
     padding: 0;
     margin: 0;
@@ -264,7 +268,7 @@ section{
 
 .section__header{
     position: absolute;
-    margin-top: -450px;
+    margin-top: -400px;
     margin-bottom: 50px;
 }
 
@@ -459,4 +463,21 @@ section{
     font-size: 2.2rem;
     font-weight: 600;
     color: var(--light_gray);
+}
+
+.partners__lines{
+    position: absolute;
+    left: -30px;
+}
+
+.partners__grid{
+    margin-top: 100px;
+    display: grid;
+    width: 80%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.partner__logo{
+    margin-top: 40px;
 }
