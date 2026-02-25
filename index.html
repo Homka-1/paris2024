@@ -17,6 +17,7 @@
                 <a href="#shop" class="nav__item">Olympic Shop</a>
                 <a href="#partners" class="nav__item">Worldwide Partners</a>
             </nav>
+            <img src="./images/menuburger.svg" alt="" class="burger">
         </div>
         <div class="hero">
             <img src="./images/hero-lg.png" class="hero__bg">
@@ -40,8 +41,10 @@
     </header>
     <main>
         <section class="countdown" id="countdown">
-            <h1 class="countdown__text font__headings headings__gradient">CountDown</h1>
-            <img src="./images/lines-titles.png" alt="" class="countdown__lines">
+            <div class="section__header">
+                <h1 class="countdown__text font__headings headings__gradient">CountDown</h1>
+                <img src="./images/lines-titles.png" alt="" class="countdown__lines">
+            </div>
             <p class="event__text font__body">Olympic Games Paris 2024</p>
             <p class="date__text font__body">26 July - 11 August,</p>
             <div class="timer font__headings">
@@ -74,28 +77,28 @@
             </div>
             <div class="posts posts__rtp">
                 <article class="posts__item">
-                    <img src="./images/road-01.png" alt="" class="post__img">
+                    <div class="post__img__wrap"><img src="./images/road-01.png" alt="" class="post__img"></div>
                     <h3 class="post__header font__headings">2024 FIBA</h3>
                     <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.</p>
                     <p class="post__date font__body">02-05 May</p>
                 </article>
                 <article class="posts__item">
-                    <img src="./images/road-02.png" alt="" class="post__img">
+                    <div class="post__img__wrap"><img src="./images/road-02.png" alt="" class="post__img"></div>
                     <h3 class="post__header font__headings">2024 UWV</h3>
                     <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.</p>
                     <p class="post__date font__body">08-12 May</p>
                 </article>
                 <article class="posts__item">
-                    <img src="./images/road-03.png" alt="" class="post__img">
+                    <div class="post__img__wrap"><img src="./images/road-03.png" alt="" class="post__img"></div>
                     <h3 class="post__header font__headings">2024 UIPM</h3>
                     <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.</p>
                     <p class="post__date font__body">09-12 May</p>
                 </article>
                 <article class="posts__item">
-                    <img src="./images/road-04.png" alt="" class="post__img">
+                    <div class="post__img__wrap"><img src="./images/road-04.png" alt="" class="post__img"></div>
                     <h3 class="post__header font__headings">2024 ISSF</h3>
                     <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.</p>
@@ -118,28 +121,35 @@ tempor incididunt ut labore et dolore.</p>
             <div class="posts posts__about">
                 <article class="posts__item">
                     <div class="post__head font__headings"><h2>SPORTS</h2></div>
-                    <img src="./images/about-01.png" alt="" class="post__img">
+                    <div class="post__img__wrap"><img src="./images/about-01.png" alt="" class="post__img"></div>
                     <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.</p>
                 </article>
                 <article class="posts__item">
                     <div class="post__head font__headings"><h2>VENUES</h2></div>
-                    <img src="./images/about-02.png" alt="" class="post__img">
+                    <div class="post__img__wrap"><img src="./images/about-02.png" alt="" class="post__img"></div>
                     <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.</p> 
                 </article>
                 <article class="posts__item">
                     <div class="post__head font__headings"><h2>CELEBRATING THE GAMES</h2></div>
-                    <img src="./images/about-03.png" alt="" class="post__img">
+                    <div class="post__img__wrap"><img src="./images/about-03.png" alt="" class="post__img"></div>
                     <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.</p>
                 </article>
                 <article class="posts__item">
                     <div class="post__head font__headings"><h2>SPECTATOR INFORMATION</h2></div>
-                    <img src="./images/about-04.png" alt="" class="post__img">
+                    <div class="post__img__wrap"><img src="./images/about-04.png" alt="" class="post__img"></div>
                     <p class="post__content font__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.</p>
                 </article>
+                <div class="posts__nav__container">
+                    <nav class="posts__nav">
+                        <button class="post__prev"></button>
+                        <span class="font__body">1/2</span>
+                        <button class="post__next"></button>
+                    </nav>
+                </div>
             </div>
             <img src="./images/logo-emblem.png" alt="" class="about__logo">
         </section>
@@ -149,9 +159,8 @@ tempor incididunt ut labore et dolore.</p>
                 <img src="./images/lines-titles.png" alt="" class="shop__lines">
             </div>
             <div class="posts posts__shop">
-                <u class="more font__body">See more products</u>
                 <article class="posts__item">
-                    <img src="./images/shop-01.png" alt="" class="post__img">
+                    <div class="post__img__wrap"><img src="./images/shop-01.png" alt="" class="post__img"></div>
                     <h3 class="post__header font__headings">Latin Crest T-Shirt-White</h3>
                     <div class="buy">
                         <button class="buy__btn font__headings">BUY NOW</button>
@@ -159,7 +168,7 @@ tempor incididunt ut labore et dolore.</p>
                     </div>
                 </article>
                 <article class="posts__item">
-                    <img src="./images/shop-02.png" alt="" class="post__img">
+                    <div class="post__img__wrap"><img src="./images/shop-02.png" alt="" class="post__img"></div>
                     <h3 class="post__header font__headings">Logo Graphic T-Shirt-White</h3>
                     <div class="buy">
                         <button class="buy__btn font__headings">BUY NOW</button>
@@ -167,7 +176,7 @@ tempor incididunt ut labore et dolore.</p>
                     </div>
                 </article>
                 <article class="posts__item">
-                    <img src="./images/shop-03.png" alt="" class="post__img">
+                    <div class="post__img__wrap"><img src="./images/shop-03.png" alt="" class="post__img"></div>
                     <h3 class="post__header font__headings">Plush Mascot-15 cms</h3>
                     <div class="buy">
                         <button class="buy__btn font__headings">BUY NOW</button>
@@ -175,13 +184,21 @@ tempor incididunt ut labore et dolore.</p>
                     </div>
                 </article>
                 <article class="posts__item">
-                    <img src="./images/shop-04.png" alt="" class="post__img">
+                    <div class="post__img__wrap"><img src="./images/shop-04.png" alt="" class="post__img"></div>
                     <h3 class="post__header font__headings">Bobble Beanie</h3>
                     <div class="buy">
                         <button class="buy__btn font__headings">BUY NOW</button>
                         <span class="price font__headings">&euro;35</span>
                     </div>
                 </article>
+                <a href="#"><u class="more font__body">See more products</u></a>
+                <div class="posts__nav__container">
+                    <nav class="posts__nav">
+                        <button class="post__prev"></button>
+                        <span class="font__body">1/2</span>
+                        <button class="post__next"></button>
+                    </nav>
+                </div>
             </div>
         </section>
         <section class="ww_partners" id="partners">
@@ -189,23 +206,32 @@ tempor incididunt ut labore et dolore.</p>
                 <h1 class="partners__text font__headings headings__gradient">Worldwide Partners</h1>
                 <img src="./images/lines-titles.png" alt="" class="partners__lines">
             </div>
-            <div class="partners__grid">
-                <img src="./images/partners/partner-01.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-02.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-03.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-04.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-05.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-06.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-07.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-08.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-09.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-10.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-11.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-12.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-13.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-14.png" alt="" class="partner__logo">
-                <img src="./images/partners/partner-15.png" alt="" class="partner__logo">
+            <div class="grid__container">
+                <div class="partners__grid">
+                    <img src="./images/partners/partner-01.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-02.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-03.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-04.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-05.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-06.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-07.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-08.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-09.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-10.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-11.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-12.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-13.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-14.png" alt="" class="partner__logo">
+                    <img src="./images/partners/partner-15.png" alt="" class="partner__logo">
+                </div>
             </div>
+            <div class="posts__nav__container">
+                    <nav class="posts__nav">
+                        <button class="post__prev"></button>
+                        <span class="font__body">1/2</span>
+                        <button class="post__next"></button>
+                    </nav>
+                </div>
         </section>
     </main>
     <footer class="font__body">
@@ -213,13 +239,13 @@ tempor incididunt ut labore et dolore.</p>
             <div class="footer__left">
                 <p>Download the Official App</p>
                 <div class="download">
-                    <img src="./images/icons-app.png">
+                    <a href="#"><img src="./images/icons-app.png"></a>
                 </div>
             </div>
             <div class="footer__right">
                 <p>Follow us on</p>
                 <div class="social">
-                    <img src="./images/icons-social.svg">
+                    <a href="#"><img src="./images/icons-social.svg"></a>
                 </div>
             </div>
             <img src="./images/logos-white.png" class="footer__logo">

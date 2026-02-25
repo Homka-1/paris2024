@@ -4,6 +4,11 @@
     -webkit-user-drag: none;
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -49,6 +54,9 @@ button{
     font-weight: 700;
 }
 
+.burger{
+    display: none;
+}
 .header{
     position: fixed;
     width: 100vw;
@@ -119,11 +127,15 @@ img{
 
 .hero__bg{
     width: 100%;
+    height: 800px;
+    object-fit: cover;
 }
 .hero__mascot{
     position: absolute;
     bottom: 40px;
     left: 20px;
+    width: 30vw;
+    height: auto;
 }
 .hero__logo{
     position: absolute;
@@ -200,7 +212,7 @@ img{
 section{
     background-color: white;
     width: 100%;
-    min-height: 800px;
+    min-height: 1000px;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     margin-top: -110px;
     display: flex;
@@ -210,15 +222,17 @@ section{
 }
 
 .countdown{
+    position: relative;
     background-color: white;
 }
 
 .countdown__lines{
-    margin-right: 200px;
+    position: absolute;
+    left: -60px;
 }
 .event__text{
     font-size: 25px;
-    margin-top: 70px;
+    margin-top: 40px;
     color: var(--black);
 }
 .date__text{
@@ -226,7 +240,7 @@ section{
 }
 
 .timer{
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -267,10 +281,9 @@ section{
 
 .section__header{
     position: absolute;
-    margin-top: -400px;
+    margin-top: -500px;
     margin-bottom: 50px;
 }
-
 
 
 .rtp__lines{
@@ -294,13 +307,24 @@ section{
     align-items: start;
     flex-direction: column;
     border-radius: 3px;
+
 }
 
-.posts__item img{
+.post__img__wrap{
+    overflow: hidden;
     height: 50%;
     width: 100%;
-    object-fit: cover;
     border-radius: inherit;
+}
+.post__img__wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.posts__item:hover .post__img__wrap img{
+    transform: scale(1.1);
 }
 
 .posts__item .post__header{
@@ -317,7 +341,7 @@ section{
 .posts__rtp .posts__item .post__date{
     color: var(--black);
     font-size: 0.85rem;
-    margin-top: 25px;
+    margin-top: auto;
     margin-bottom: 5px;
 }
 
@@ -360,6 +384,7 @@ section{
 
 .about_the_games{
     background-color: white;
+    position: relative;
 }
 
 
@@ -400,12 +425,14 @@ section{
 }
 
 .about__logo{
-    margin-top: 550px;
+    position: absolute;
+    bottom: 0px;
 }
 
 .olympic_shop{
     margin-top: 50px;
     background-color: var(--white);
+    position: relative;
 }
 
 .shop__lines{
@@ -415,15 +442,14 @@ section{
 
 .posts__shop .posts__item{
     height: 310px;
-    padding: 0 5%;
+    padding: 5%;
 }
 
-.posts__shop img{
+.posts__shop .post__img__wrap{
     border: 1px solid var(--white) ;
     justify-content: center;
     width: 100%;
-    height: 60%;
-    margin-top: 5%;
+    height: 60%; 
 }
 
 .posts__shop .post__header{
@@ -440,24 +466,32 @@ section{
 }
 
 .buy{
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 10%;
+    width: 100%;
 }
 
 .buy__btn{
-    padding: 15px 40px;
+    padding: 15px 20%;
     background-color: var(--black);
     color: white;
     font-weight: 500;
     font-size: 1rem;
     border-radius: 3px;
     cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.buy__btn:hover{
+    transform: scale(1.05);
 }
 
 .buy .price{
-    margin-left: 3.5rem;
+    position: absolute;
+    right: 0;
     font-size: 2.2rem;
     font-weight: 600;
     color: var(--light_gray);
@@ -468,16 +502,31 @@ section{
     left: -30px;
 }
 
+.ww_partners{
+    position: relative;
+}
+
+.grid__container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
 .partners__grid{
     margin-top: 100px;
+    gap: 50px;
     display: grid;
-    width: 80%;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(5, 1fr);
 }
 
 .partner__logo{
     margin-top: 40px;
+    transition: transform 1s ease;
+}
+
+.partner__logo:hover{
+    transform: rotate(1080deg);
 }
 
 .footer__container{
@@ -533,4 +582,104 @@ section{
     transform: translateX(-50%);
     bottom: 10px;
     font-size: 1rem;
+}
+
+#about .posts__nav__container{
+    display: none;
+}
+
+#shop .posts__nav__container{
+    display: none;
+}
+
+#partners .posts__nav__container{
+    position: absolute;
+    width: 80%;
+    bottom: 100px;
+    display: none;
+}
+
+#partners .posts__nav{
+    position: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .nav__links{
+        display: none;
+    }
+    .posts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .posts__item:nth-child(n+3){
+        display: none;
+    }
+    .partners__grid{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .partners__grid img:nth-child(n+10){
+        display: none;
+    }
+    .timer__logos{
+        bottom: 100px;
+        right: unset;
+    }
+    #about .posts__nav__container{
+    display: initial;
+    }
+    #shop .posts__nav__container{
+    display: initial;
+    }
+    #partners .posts__nav__container{
+    display: initial;
+    }
+    .burger{
+        display: initial;
+        margin-right: 5%;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:800px){
+    .posts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .posts__item:nth-child(n+2){
+        display: none;
+    }
+    #about .posts__nav__container{
+        position: absolute;
+        width: 90%;
+        bottom: 100px;
+    }
+    #shop .posts__nav__container{
+        position: absolute;
+        width: 90%;
+        bottom: 0;
+    }
+    #partners .posts__nav__container{
+        position: absolute;
+        width: 80%;
+        bottom: 100px;
+    }
+    #partners .posts__nav{
+        justify-content: space-between;
+    }
+    .posts__nav{
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .partners__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .partners__grid img:nth-child(n+7){
+        display: none;
+    }
 }
