@@ -607,7 +607,7 @@ section{
     align-items: center;
 }
 
-@media (max-width: 1024px) {
+@media screen (max-width: 1024px) {
     .nav__links{
         display: none;
     }
@@ -644,7 +644,7 @@ section{
     }
 }
 
-@media (max-width:800px){
+@media screen (max-width:800px){
     .posts{
         grid-template-columns: repeat(1, 1fr);
     }
