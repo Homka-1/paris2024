@@ -283,6 +283,8 @@ section{
     position: absolute;
     margin-top: -500px;
     margin-bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -550,10 +552,12 @@ section{
 }
 
 .download{
+    position: absolute;
     margin-top: 20px;
 }
 
 .social{
+    position: absolute;
     margin-top: 20px;
 }
 
@@ -607,7 +611,7 @@ section{
     align-items: center;
 }
 
-@media screen (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .nav__links{
         display: none;
     }
@@ -644,7 +648,7 @@ section{
     }
 }
 
-@media screen (max-width:800px){
+@media screen and (max-width:800px){
     .posts{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -681,5 +685,20 @@ section{
     }
     .partners__grid img:nth-child(n+7){
         display: none;
+    }
+    .footer__left{
+        background-color: var(--black);
+    }
+    .download{
+        left: 50%;
+        margin-top: unset;
+        top: 15%;
+        transform: translateX(-50%);
+    }
+    .social{
+        left: 50%;
+        margin-top: unset;
+        top: 35%;
+        transform: translateX(-50%);
     }
 }
